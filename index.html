@@ -3,37 +3,37 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SY's Python × MTech Prep — 2-Week Plan</title>
+<title>SY's MTech AIS Prep 🌸 — 36-Week Journey</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Mono:wght@400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
 :root {
-  --ink: #0f0e0c;
-  --paper: #faf8f4;
-  --cream: #f2ede4;
-  --warm: #e8e0d2;
-  --muted: #9a9186;
-  --faint: #d4cdc2;
-  --blue: #1a4fd6;
-  --blue-light: #e8eeff;
-  --blue-mid: #b8c8f8;
-  --teal: #0b7a5e;
-  --teal-light: #e2f5ef;
-  --teal-mid: #8dd4be;
-  --amber: #b45309;
-  --amber-light: #fef3cd;
-  --amber-mid: #fcd47a;
-  --red: #b91c1c;
-  --red-light: #fee2e2;
-  --green: #166534;
-  --green-light: #dcfce7;
+  --ink: #3d1530;
+  --paper: #fff5f8;
+  --cream: #fce7f3;
+  --warm: #f9d0e5;
+  --muted: #c084a0;
+  --faint: #f3b8d2;
+  --pink: #ec4899;
+  --pink-dark: #db2777;
+  --pink-light: #fdf2f8;
+  --pink-mid: #fbcfe8;
+  --lavender: #a855f7;
+  --lavender-dark: #9333ea;
+  --lavender-light: #faf5ff;
+  --lavender-mid: #d8b4fe;
+  --rose: #f43f5e;
+  --rose-dark: #e11d48;
+  --rose-light: #fff1f2;
+  --rose-mid: #fda4af;
+  --mint: #10b981;
+  --mint-light: #ecfdf5;
   --serif: 'Instrument Serif', Georgia, serif;
   --mono: 'DM Mono', monospace;
   --sans: 'Outfit', sans-serif;
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
 html { scroll-behavior: smooth; }
 
 body {
@@ -45,112 +45,99 @@ body {
   min-height: 100vh;
 }
 
-/* ── HERO ─────────────────────────────────────────────── */
+/* ── HERO ──────────────────────────────────────────────── */
 .hero {
-  background: var(--ink);
+  background: linear-gradient(135deg, #4a0030 0%, #831843 50%, #9d174d 100%);
   padding: 64px 48px 56px;
   position: relative;
   overflow: hidden;
 }
-
 .hero::before {
   content: '';
   position: absolute;
   top: -80px; right: -80px;
-  width: 320px; height: 320px;
+  width: 340px; height: 340px;
   border-radius: 50%;
-  background: rgba(26,79,214,0.18);
+  background: rgba(236,72,153,0.22);
   pointer-events: none;
 }
-
 .hero::after {
   content: '';
   position: absolute;
-  bottom: -60px; left: 60px;
-  width: 200px; height: 200px;
+  bottom: -60px; left: 40px;
+  width: 220px; height: 220px;
   border-radius: 50%;
-  background: rgba(11,122,94,0.14);
+  background: rgba(168,85,247,0.16);
   pointer-events: none;
 }
-
+.hero-sparkle {
+  position: absolute;
+  top: 24px; right: 48px;
+  font-size: 28px;
+  opacity: 0.5;
+  pointer-events: none;
+}
 .hero-eyebrow {
   font-family: var(--mono);
   font-size: 11px;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--teal-mid);
+  color: #f9a8d4;
   margin-bottom: 18px;
 }
-
 .hero-title {
   font-family: var(--serif);
-  font-size: clamp(36px, 6vw, 58px);
-  color: #faf8f4;
+  font-size: clamp(34px, 6vw, 56px);
+  color: #fff0f5;
   line-height: 1.1;
   margin-bottom: 8px;
 }
-
-.hero-title em {
-  font-style: italic;
-  color: var(--blue-mid);
-}
-
+.hero-title em { font-style: italic; color: #f9a8d4; }
 .hero-sub {
-  font-family: var(--sans);
   font-weight: 300;
-  font-size: 16px;
-  color: rgba(250,248,244,0.55);
+  font-size: 15px;
+  color: rgba(255,240,245,0.6);
   max-width: 480px;
   margin-top: 14px;
-  line-height: 1.6;
+  line-height: 1.7;
 }
-
 .hero-stats {
   display: flex;
   gap: 32px;
   margin-top: 40px;
   flex-wrap: wrap;
 }
-
-.hero-stat {
-  display: flex;
-  flex-direction: column;
-}
-
+.hero-stat { display: flex; flex-direction: column; }
 .hero-stat-num {
   font-family: var(--serif);
   font-size: 32px;
-  color: #faf8f4;
+  color: #fff0f5;
   line-height: 1;
 }
-
 .hero-stat-label {
   font-family: var(--mono);
   font-size: 10px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: rgba(250,248,244,0.4);
+  color: rgba(255,240,245,0.4);
   margin-top: 4px;
 }
-
 .hero-divider {
   width: 1px;
-  background: rgba(250,248,244,0.12);
+  background: rgba(255,240,245,0.14);
   align-self: stretch;
 }
 
-/* ── NAV PILLS ────────────────────────────────────────── */
+/* ── NAV ───────────────────────────────────────────────── */
 .nav-bar {
-  background: var(--cream);
+  background: #fdf2f8;
   border-bottom: 1px solid var(--warm);
   padding: 0 48px;
   display: flex;
-  gap: 0;
   position: sticky;
   top: 0;
   z-index: 100;
 }
-
 .nav-link {
   font-family: var(--mono);
   font-size: 11px;
@@ -162,22 +149,14 @@ body {
   border-bottom: 2px solid transparent;
   transition: color 0.2s, border-color 0.2s;
 }
-
 .nav-link:hover { color: var(--ink); border-bottom-color: var(--faint); }
-.nav-link.active { color: var(--blue); border-bottom-color: var(--blue); }
+.nav-link.active { color: var(--pink); border-bottom-color: var(--pink); }
 
-/* ── LAYOUT ───────────────────────────────────────────── */
-.container {
-  max-width: 980px;
-  margin: 0 auto;
-  padding: 0 48px;
-}
+/* ── LAYOUT ────────────────────────────────────────────── */
+.container { max-width: 1000px; margin: 0 auto; padding: 0 48px; }
+.section { padding: 64px 0 16px; }
 
-.section {
-  padding: 64px 0 16px;
-}
-
-/* ── SECTION HEADERS ──────────────────────────────────── */
+/* ── SECTION HEADERS ───────────────────────────────────── */
 .section-label {
   font-family: var(--mono);
   font-size: 10px;
@@ -186,102 +165,66 @@ body {
   color: var(--muted);
   margin-bottom: 6px;
 }
-
 .section-title {
   font-family: var(--serif);
   font-size: 30px;
   line-height: 1.2;
   margin-bottom: 6px;
 }
-
 .section-desc {
   color: var(--muted);
   font-weight: 300;
   font-size: 14px;
-  max-width: 540px;
+  max-width: 560px;
   margin-bottom: 32px;
 }
 
-/* ── WEEK HEADER ──────────────────────────────────────── */
-.week-block {
-  margin-bottom: 48px;
-}
-
-.week-tag {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 6px 14px 6px 10px;
-  border-radius: 100px;
-  font-family: var(--mono);
-  font-size: 11px;
-  letter-spacing: 0.08em;
-  font-weight: 500;
-  margin-bottom: 20px;
-}
-
-.week-tag-dot {
-  width: 8px; height: 8px;
-  border-radius: 50%;
-}
-
-.week1-tag { background: #e8eeff; color: #1a3a9e; }
-.week1-tag .week-tag-dot { background: var(--blue); }
-.week2-tag { background: var(--teal-light); color: #065040; }
-.week2-tag .week-tag-dot { background: var(--teal); }
-
-.week-heading {
-  font-family: var(--serif);
-  font-size: 22px;
-  margin-bottom: 4px;
-}
-
-.week-sub {
-  font-size: 13px;
-  color: var(--muted);
-  margin-bottom: 24px;
-}
-
-/* ── DAY CARDS GRID ───────────────────────────────────── */
-.days-grid {
+/* ── WEEK CARDS GRID ───────────────────────────────────── */
+.weeks-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 14px;
-  margin-bottom: 18px;
+  margin-bottom: 24px;
 }
-
-.day-card {
+.week-card {
   background: white;
-  border: 1px solid var(--warm);
-  border-radius: 14px;
+  border: 1.5px solid var(--warm);
+  border-radius: 16px;
   overflow: hidden;
-  transition: box-shadow 0.2s, transform 0.2s;
+  transition: box-shadow 0.2s, transform 0.2s, border-color 0.2s;
   animation: fadeUp 0.4s ease both;
 }
-
-.day-card:hover {
-  box-shadow: 0 8px 32px rgba(15,14,12,0.08);
+.week-card:hover {
+  box-shadow: 0 8px 32px rgba(236,72,153,0.1);
   transform: translateY(-2px);
+  border-color: var(--faint);
 }
+.week-card.done-card { opacity: 0.6; }
 
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(12px); }
   to   { opacity: 1; transform: translateY(0); }
 }
+.week-card:nth-child(1) { animation-delay: 0.04s; }
+.week-card:nth-child(2) { animation-delay: 0.08s; }
+.week-card:nth-child(3) { animation-delay: 0.12s; }
+.week-card:nth-child(4) { animation-delay: 0.16s; }
+.week-card:nth-child(5) { animation-delay: 0.20s; }
+.week-card:nth-child(6) { animation-delay: 0.24s; }
 
-.day-card:nth-child(1) { animation-delay: 0.05s; }
-.day-card:nth-child(2) { animation-delay: 0.10s; }
-.day-card:nth-child(3) { animation-delay: 0.15s; }
-
-.day-header {
+/* ── CARD HEADER ───────────────────────────────────────── */
+.week-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 12px 14px 10px;
   border-bottom: 1px solid var(--warm);
 }
+.wh-p1 { background: var(--pink-light); }
+.wh-p2 { background: var(--lavender-light); }
+.wh-p3 { background: var(--rose-light); }
 
-.day-num {
+.week-num {
   font-family: var(--mono);
   font-size: 10px;
   letter-spacing: 0.12em;
@@ -289,30 +232,44 @@ body {
   color: var(--muted);
 }
 
-.day-check {
-  width: 20px; height: 20px;
+/* ── CHECK BUTTON ──────────────────────────────────────── */
+.week-check {
+  width: 22px; height: 22px;
   border-radius: 50%;
   border: 1.5px solid var(--faint);
   cursor: pointer;
-  transition: background 0.2s, border-color 0.2s;
+  transition: background 0.2s, border-color 0.2s, box-shadow 0.2s;
   display: flex; align-items: center; justify-content: center;
   flex-shrink: 0;
 }
+.week-check:hover {
+  border-color: var(--pink);
+  box-shadow: 0 0 0 3px rgba(236,72,153,0.1);
+}
+.week-check.done {
+  background: linear-gradient(135deg, var(--pink), var(--pink-dark));
+  border-color: var(--pink);
+  box-shadow: 0 2px 8px rgba(236,72,153,0.3);
+}
+.week-check.done::after {
+  content: '';
+  width: 5px; height: 9px;
+  border: 2px solid white;
+  border-top: none;
+  border-left: none;
+  transform: rotate(45deg) translateY(-1px);
+  display: block;
+}
 
-.day-check:hover { border-color: var(--teal); }
-.day-check.done { background: var(--teal); border-color: var(--teal); }
-.day-check.done::after { content: ''; width: 5px; height: 8px; border: 2px solid white; border-top: none; border-left: none; transform: rotate(45deg) translateY(-1px); display: block; }
-
-.day-body { padding: 14px; }
-
-.day-topic {
+/* ── CARD BODY ─────────────────────────────────────────── */
+.week-body { padding: 14px; }
+.week-focus {
   font-family: var(--serif);
   font-size: 16px;
   line-height: 1.3;
   margin-bottom: 10px;
   color: var(--ink);
 }
-
 .task-list {
   list-style: none;
   display: flex;
@@ -320,39 +277,24 @@ body {
   gap: 5px;
   margin-bottom: 12px;
 }
-
 .task-list li {
   font-size: 12.5px;
-  color: #5a5450;
-  line-height: 1.45;
+  color: #7a4060;
+  line-height: 1.5;
   display: flex;
   gap: 7px;
   align-items: flex-start;
 }
-
 .task-list li::before {
-  content: '—';
+  content: '✦';
   color: var(--faint);
-  font-size: 11px;
+  font-size: 8px;
   flex-shrink: 0;
-  margin-top: 1px;
+  margin-top: 4px;
 }
 
-.task-highlight {
-  font-size: 12px;
-  font-style: italic;
-  color: var(--blue);
-  font-family: var(--serif);
-  padding: 7px 10px;
-  background: var(--blue-light);
-  border-radius: 6px;
-  margin-bottom: 10px;
-  border-left: 2px solid var(--blue-mid);
-}
-
-/* ── BADGES ───────────────────────────────────────────── */
-.badge-row { display: flex; flex-wrap: wrap; gap: 5px; }
-
+/* ── BADGES ────────────────────────────────────────────── */
+.badge-row { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 8px; }
 .badge {
   font-family: var(--mono);
   font-size: 9px;
@@ -362,163 +304,27 @@ body {
   border-radius: 100px;
   font-weight: 500;
 }
+.badge-easy   { background: var(--mint-light); color: var(--mint); }
+.badge-mid    { background: var(--lavender-light); color: var(--lavender-dark); }
+.badge-hard   { background: var(--rose-light); color: var(--rose-dark); }
+.badge-course { background: var(--pink-light); color: var(--pink-dark); }
+.badge-proj   { background: #fef9c3; color: #854d0e; }
 
-.badge-easy    { background: var(--green-light); color: var(--green); }
-.badge-mid     { background: var(--amber-light); color: var(--amber); }
-.badge-hard    { background: var(--red-light);   color: var(--red); }
-
-/* ── ASSESSMENT CARDS ─────────────────────────────────── */
-.assess-card {
-  border: 1.5px solid var(--amber-mid);
-  border-radius: 14px;
-  background: var(--amber-light);
-  overflow: hidden;
-  margin: 4px 0 32px;
-  animation: fadeUp 0.4s ease 0.2s both;
-}
-
-.assess-header {
-  display: flex;
-  align-items: flex-start;
-  gap: 14px;
-  padding: 16px 18px 14px;
-  background: rgba(180,83,9,0.06);
-  border-bottom: 1px solid rgba(180,83,9,0.15);
-}
-
-.assess-num {
-  font-family: var(--serif);
-  font-size: 28px;
-  color: var(--amber);
-  line-height: 1;
-  flex-shrink: 0;
-  margin-top: 2px;
-}
-
-.assess-meta { flex: 1; }
-
-.assess-title {
-  font-family: var(--sans);
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--amber);
-  margin-bottom: 2px;
-}
-
-.assess-timing {
-  font-family: var(--mono);
-  font-size: 10px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: rgba(180,83,9,0.6);
-}
-
-.assess-body {
-  padding: 16px 18px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-}
-
-.assess-item {
-  display: flex;
-  gap: 8px;
-  align-items: flex-start;
-  font-size: 12.5px;
-  color: #6b4a1a;
-  line-height: 1.5;
-}
-
-.assess-arrow {
-  flex-shrink: 0;
-  font-family: var(--mono);
-  font-size: 11px;
-  color: var(--amber);
-  margin-top: 1px;
-}
-
-/* ── FINAL CARD ───────────────────────────────────────── */
-.final-card {
-  background: var(--ink);
-  border-radius: 14px;
-  overflow: hidden;
-  margin-top: 16px;
-  animation: fadeUp 0.4s ease 0.3s both;
-}
-
-.final-header {
-  padding: 20px 22px 16px;
-  border-bottom: 1px solid rgba(255,255,255,0.08);
-  display: flex;
-  align-items: center;
-  gap: 14px;
-}
-
-.final-star {
-  font-family: var(--serif);
-  font-size: 32px;
-  color: var(--amber-mid);
-  line-height: 1;
-}
-
-.final-title {
-  font-family: var(--sans);
-  font-size: 15px;
-  font-weight: 500;
-  color: #faf8f4;
-  margin-bottom: 2px;
-}
-
-.final-sub {
-  font-family: var(--mono);
-  font-size: 10px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: rgba(250,248,244,0.35);
-}
-
-.final-body {
-  padding: 16px 22px 20px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px;
-}
-
-.final-item {
-  display: flex;
-  gap: 10px;
-  align-items: flex-start;
-  font-size: 13px;
-  color: rgba(250,248,244,0.7);
-  line-height: 1.5;
-}
-
-.final-tick {
-  flex-shrink: 0;
-  width: 16px; height: 16px;
-  border-radius: 50%;
-  background: rgba(26,79,214,0.3);
-  display: flex; align-items: center; justify-content: center;
-  font-size: 9px;
-  color: var(--blue-mid);
-  margin-top: 2px;
-}
-
-/* ── TOOLS SECTION ────────────────────────────────────── */
+/* ── TOOLS GRID ────────────────────────────────────────── */
 .tools-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 12px;
   margin-bottom: 64px;
 }
-
 .tool-card {
-  border: 1px solid var(--warm);
-  border-radius: 12px;
+  border: 1.5px solid var(--warm);
+  border-radius: 14px;
   padding: 16px;
   background: white;
+  transition: box-shadow 0.2s;
 }
-
+.tool-card:hover { box-shadow: 0 4px 16px rgba(236,72,153,0.08); }
 .tool-label {
   font-family: var(--mono);
   font-size: 9px;
@@ -527,20 +333,15 @@ body {
   color: var(--muted);
   margin-bottom: 6px;
 }
-
 .tool-name {
   font-family: var(--serif);
   font-size: 16px;
   margin-bottom: 5px;
+  color: var(--ink);
 }
+.tool-desc { font-size: 12.5px; color: var(--muted); line-height: 1.5; }
 
-.tool-desc {
-  font-size: 12.5px;
-  color: var(--muted);
-  line-height: 1.45;
-}
-
-/* ── PROGRESS TRACKER ─────────────────────────────────── */
+/* ── PROGRESS BAR ──────────────────────────────────────── */
 .progress-bar-wrap {
   position: sticky;
   bottom: 0;
@@ -552,7 +353,6 @@ body {
   gap: 14px;
   z-index: 99;
 }
-
 .progress-label {
   font-family: var(--mono);
   font-size: 10px;
@@ -561,79 +361,54 @@ body {
   color: var(--muted);
   white-space: nowrap;
 }
-
 .progress-bar {
   flex: 1;
-  height: 4px;
+  height: 5px;
   background: var(--warm);
-  border-radius: 2px;
+  border-radius: 3px;
   overflow: hidden;
 }
-
 .progress-fill {
   height: 100%;
-  background: var(--teal);
-  border-radius: 2px;
+  background: linear-gradient(90deg, var(--pink-dark), var(--pink), #f472b6);
+  border-radius: 3px;
   width: 0%;
   transition: width 0.5s ease;
 }
-
 .progress-count {
   font-family: var(--mono);
   font-size: 11px;
   color: var(--muted);
   white-space: nowrap;
-  min-width: 52px;
+  min-width: 56px;
   text-align: right;
 }
 
-/* ── DIVIDER ──────────────────────────────────────────── */
-.divider {
-  width: 100%;
-  height: 1px;
-  background: var(--warm);
-  margin: 8px 0 40px;
-}
+/* ── DIVIDER ───────────────────────────────────────────── */
+.divider { width: 100%; height: 1px; background: var(--warm); margin: 8px 0 40px; }
 
-/* ── FOOTER ───────────────────────────────────────────── */
+/* ── FOOTER ────────────────────────────────────────────── */
 footer {
   background: var(--cream);
   border-top: 1px solid var(--warm);
-  padding: 32px 48px;
+  padding: 28px 48px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: gap;
+  flex-wrap: wrap;
   gap: 12px;
 }
+.footer-left { font-family: var(--serif); font-size: 18px; color: var(--ink); }
+.footer-left span { color: var(--muted); font-size: 13px; font-family: var(--sans); font-weight: 300; margin-left: 8px; }
+.footer-right { font-family: var(--mono); font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
 
-.footer-left {
-  font-family: var(--serif);
-  font-size: 18px;
-  color: var(--ink);
-}
-
-.footer-left span { color: var(--muted); font-size: 14px; font-family: var(--sans); font-weight: 300; margin-left: 8px; }
-
-.footer-right {
-  font-family: var(--mono);
-  font-size: 10px;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--muted);
-}
-
-/* ── RESPONSIVE ───────────────────────────────────────── */
-@media (max-width: 700px) {
-  .hero, .container, .nav-bar, .progress-bar-wrap, footer {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  .days-grid, .tools-grid { grid-template-columns: 1fr; }
-  .assess-body, .final-body { grid-template-columns: 1fr; }
+/* ── RESPONSIVE ────────────────────────────────────────── */
+@media (max-width: 720px) {
+  .hero, .container, .nav-bar, .progress-bar-wrap, footer { padding-left: 20px; padding-right: 20px; }
+  .weeks-grid, .tools-grid { grid-template-columns: 1fr; }
   .hero-stats { gap: 20px; }
   .hero-divider { display: none; }
-  .nav-bar { gap: 0; overflow-x: auto; }
+  .nav-bar { overflow-x: auto; }
 }
 </style>
 </head>
@@ -641,217 +416,284 @@ footer {
 
 <!-- HERO -->
 <section class="hero">
-  <p class="hero-eyebrow">MTech AIS prep · Python from scratch</p>
-  <h1 class="hero-title">SY's <em>2-Week</em><br>Learning Plan</h1>
-  <p class="hero-sub">A structured path from zero Python to ML fundamentals — designed to test whether MTech AIS is the right fit.</p>
+  <div class="hero-sparkle">🌸</div>
+  <p class="hero-eyebrow">MTech AIS · 36-Week Preparation Journey</p>
+  <h1 class="hero-title">SY's <em>Big Dream</em><br>Study Plan</h1>
+  <p class="hero-sub">A full 36-week path from Python basics to ML mastery — built just for you, one week at a time. You've got this! 🩷</p>
   <div class="hero-stats">
     <div class="hero-stat">
-      <span class="hero-stat-num">14</span>
-      <span class="hero-stat-label">Days</span>
+      <span class="hero-stat-num">36</span>
+      <span class="hero-stat-label">Total weeks</span>
     </div>
     <div class="hero-divider"></div>
     <div class="hero-stat">
-      <span class="hero-stat-num">4</span>
-      <span class="hero-stat-label">Checkpoints</span>
+      <span class="hero-stat-num">3</span>
+      <span class="hero-stat-label">Phases</span>
     </div>
     <div class="hero-divider"></div>
     <div class="hero-stat">
-      <span class="hero-stat-num">2</span>
-      <span class="hero-stat-label">Weeks</span>
+      <span class="hero-stat-num">3</span>
+      <span class="hero-stat-label">Projects</span>
     </div>
     <div class="hero-divider"></div>
     <div class="hero-stat">
       <span class="hero-stat-num">1</span>
-      <span class="hero-stat-label">Final Project</span>
+      <span class="hero-stat-label">Dream goal</span>
     </div>
   </div>
 </section>
 
 <!-- NAV -->
 <nav class="nav-bar">
-  <a class="nav-link active" href="#week1">Week 1</a>
-  <a class="nav-link" href="#week2">Week 2</a>
-  <a class="nav-link" href="#assessments">Assessments</a>
-  <a class="nav-link" href="#tools">Tools</a>
+  <a class="nav-link active" href="#phase1">Phase 1</a>
+  <a class="nav-link" href="#phase2">Phase 2</a>
+  <a class="nav-link" href="#phase3">Phase 3</a>
+  <a class="nav-link" href="#resources">Resources</a>
 </nav>
 
 <main>
 <div class="container">
 
-<!-- WEEK 1 -->
-<section class="section" id="week1">
-  <p class="section-label">Week 1 · Days 1–6</p>
-  <h2 class="section-title">Python fundamentals</h2>
-  <p class="section-desc">Start from absolute zero. By the end of this week you should be able to write functions, work with data structures, and analyse a CSV file independently.</p>
+<!-- ══════════════════════════════════════════════════════ -->
+<!-- PHASE 1 — FOUNDATIONS  Weeks 1–12                     -->
+<!-- ══════════════════════════════════════════════════════ -->
+<section class="section" id="phase1">
+  <p class="section-label">Phase 1 · Weeks 1–12</p>
+  <h2 class="section-title">Foundations 🌱</h2>
+  <p class="section-desc">From absolute zero to your first ML project. Tick each week once you've finished all the tasks — progress saves automatically!</p>
 
-  <div class="week-block">
-    <div class="days-grid">
+  <div class="weeks-grid">
 
-      <!-- Day 1 -->
-      <div class="day-card">
-        <div class="day-header">
-          <span class="day-num">Day 1 · Monday</span>
-          <div class="day-check" onclick="toggleDay(this)"></div>
-        </div>
-        <div class="day-body">
-          <p class="day-topic">Setup + Python basics</p>
-          <ul class="task-list">
-            <li>Install Python + VS Code or use Google Colab</li>
-            <li>Variables, strings, integers, floats, booleans</li>
-            <li><code>print()</code>, <code>input()</code>, <code>type()</code></li>
-            <li>Arithmetic — +, -, *, /, //, %, **</li>
-          </ul>
-          <p class="task-highlight">Exercise: build a BMI calculator from scratch</p>
-          <div class="badge-row">
-            <span class="badge badge-easy">easy</span>
-          </div>
-        </div>
+    <!-- W1 -->
+    <div class="week-card">
+      <div class="week-header wh-p1">
+        <span class="week-num">Week 1</span>
+        <div class="week-check" onclick="toggleWeek(this)" data-id="w1"></div>
       </div>
-
-      <!-- Day 2 -->
-      <div class="day-card">
-        <div class="day-header">
-          <span class="day-num">Day 2 · Tuesday</span>
-          <div class="day-check" onclick="toggleDay(this)"></div>
+      <div class="week-body">
+        <p class="week-focus">Python setup + variables</p>
+        <ul class="task-list">
+          <li>Install Anaconda and open Jupyter Notebook</li>
+          <li>Enroll in <em>Python for Everybody</em> on Coursera</li>
+          <li>Complete variables, expressions &amp; data types</li>
+        </ul>
+        <div class="badge-row">
+          <span class="badge badge-easy">easy</span>
+          <span class="badge badge-course">coursera</span>
         </div>
-        <div class="day-body">
-          <p class="day-topic">Control flow</p>
-          <ul class="task-list">
-            <li>if / elif / else conditions</li>
-            <li>for loops and while loops</li>
-            <li><code>break</code>, <code>continue</code>, <code>range()</code></li>
-            <li>Nested conditions</li>
-          </ul>
-          <p class="task-highlight">Exercise: FizzBuzz + grade classifier (A/B/C/F)</p>
-          <div class="badge-row">
-            <span class="badge badge-easy">easy</span>
-            <span class="badge badge-mid">intermediate</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Day 3 -->
-      <div class="day-card">
-        <div class="day-header">
-          <span class="day-num">Day 3 · Wednesday</span>
-          <div class="day-check" onclick="toggleDay(this)"></div>
-        </div>
-        <div class="day-body">
-          <p class="day-topic">Lists & functions</p>
-          <ul class="task-list">
-            <li>Lists — indexing, slicing, append, remove</li>
-            <li>Defining functions, parameters, return values</li>
-            <li>Scope: local vs global</li>
-          </ul>
-          <p class="task-highlight">Exercise: function that filters a sales list by a threshold value</p>
-          <div class="badge-row">
-            <span class="badge badge-easy">easy</span>
-            <span class="badge badge-mid">intermediate</span>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- Assessment 1 -->
-    <div class="assess-card" id="cp1">
-      <div class="assess-header">
-        <span class="assess-num">CP1</span>
-        <div class="assess-meta">
-          <p class="assess-title">Checkpoint 1 — end of Day 3</p>
-          <p class="assess-timing">~45 min · no notes · done in VS Code</p>
-        </div>
-      </div>
-      <div class="assess-body">
-        <div class="assess-item"><span class="assess-arrow">→</span>Write a function that takes a list of numbers and returns only the ones above average</div>
-        <div class="assess-item"><span class="assess-arrow">→</span>FizzBuzz variant: multiples of 3 = "Fizz", 5 = "Buzz", both = "AI"</div>
-        <div class="assess-item"><span class="assess-arrow">→</span>Debug 3 broken code snippets — explain each error out loud</div>
-        <div class="assess-item"><span class="assess-arrow">→</span>Explain: what is a return value? What happens if a function has none?</div>
       </div>
     </div>
 
-    <div class="days-grid">
-
-      <!-- Day 4 -->
-      <div class="day-card">
-        <div class="day-header">
-          <span class="day-num">Day 4 · Thursday</span>
-          <div class="day-check" onclick="toggleDay(this)"></div>
-        </div>
-        <div class="day-body">
-          <p class="day-topic">Dictionaries + data structures</p>
-          <ul class="task-list">
-            <li>Dicts — keys, values, <code>.get()</code>, <code>.items()</code></li>
-            <li>Tuples and sets</li>
-            <li>List comprehensions (intro)</li>
-            <li>Nested dicts — simulate a JSON record</li>
-          </ul>
-          <p class="task-highlight">Exercise: store a product catalogue, filter by price range</p>
-          <div class="badge-row">
-            <span class="badge badge-mid">intermediate</span>
-          </div>
+    <!-- W2 -->
+    <div class="week-card">
+      <div class="week-header wh-p1">
+        <span class="week-num">Week 2</span>
+        <div class="week-check" onclick="toggleWeek(this)" data-id="w2"></div>
+      </div>
+      <div class="week-body">
+        <p class="week-focus">Conditionals + loops</p>
+        <ul class="task-list">
+          <li>Learn if / else, for loops, while loops</li>
+          <li>Write a script to print even numbers</li>
+          <li>Learn how to define and call functions</li>
+        </ul>
+        <div class="badge-row">
+          <span class="badge badge-easy">easy</span>
         </div>
       </div>
-
-      <!-- Day 5 -->
-      <div class="day-card">
-        <div class="day-header">
-          <span class="day-num">Day 5 · Friday</span>
-          <div class="day-check" onclick="toggleDay(this)"></div>
-        </div>
-        <div class="day-body">
-          <p class="day-topic">File I/O + error handling</p>
-          <ul class="task-list">
-            <li>Read and write <code>.txt</code> and <code>.csv</code> files</li>
-            <li><code>try / except / finally</code></li>
-            <li>ValueError, KeyError, IndexError</li>
-          </ul>
-          <p class="task-highlight">Exercise: read a CSV of sales data, catch and report malformed rows</p>
-          <div class="badge-row">
-            <span class="badge badge-mid">intermediate</span>
-            <span class="badge badge-hard">hard</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Day 6 -->
-      <div class="day-card">
-        <div class="day-header">
-          <span class="day-num">Day 6 · Saturday</span>
-          <div class="day-check" onclick="toggleDay(this)"></div>
-        </div>
-        <div class="day-body">
-          <p class="day-topic">NumPy + pandas intro</p>
-          <ul class="task-list">
-            <li><code>pip install numpy pandas</code>, import conventions</li>
-            <li>NumPy arrays vs Python lists — why faster?</li>
-            <li>pandas DataFrame: <code>read_csv</code>, <code>head</code>, <code>describe</code></li>
-            <li>Column selection, filtering rows</li>
-          </ul>
-          <p class="task-highlight">Exercise: load Titanic or Iris dataset, answer 5 analytical questions</p>
-          <div class="badge-row">
-            <span class="badge badge-mid">intermediate</span>
-            <span class="badge badge-hard">hard</span>
-          </div>
-        </div>
-      </div>
-
     </div>
 
-    <!-- Assessment 2 -->
-    <div class="assess-card" id="cp2">
-      <div class="assess-header">
-        <span class="assess-num">CP2</span>
-        <div class="assess-meta">
-          <p class="assess-title">Checkpoint 2 — end of Day 6</p>
-          <p class="assess-timing">~60 min · pandas docs allowed, nothing else</p>
+    <!-- W3 -->
+    <div class="week-card">
+      <div class="week-header wh-p1">
+        <span class="week-num">Week 3</span>
+        <div class="week-check" onclick="toggleWeek(this)" data-id="w3"></div>
+      </div>
+      <div class="week-body">
+        <p class="week-focus">Strings + data structures</p>
+        <ul class="task-list">
+          <li>Learn strings and lists (indexing, slicing)</li>
+          <li>Learn dictionaries and tuples</li>
+          <li>Exercise: countries and capitals dictionary</li>
+        </ul>
+        <div class="badge-row">
+          <span class="badge badge-easy">easy</span>
+          <span class="badge badge-mid">intermediate</span>
         </div>
       </div>
-      <div class="assess-body">
-        <div class="assess-item"><span class="assess-arrow">→</span>Given a CSV of monthly expenses, use pandas to find the highest-spending month and category</div>
-        <div class="assess-item"><span class="assess-arrow">→</span>Write a list comprehension that squares all even numbers in a list</div>
-        <div class="assess-item"><span class="assess-arrow">→</span>Wrap file-reading in try/except — handle missing file gracefully with a clear message</div>
-        <div class="assess-item"><span class="assess-arrow">→</span>Explain: what is a DataFrame? How is it different from a list of dicts?</div>
+    </div>
+
+    <!-- W4 -->
+    <div class="week-card">
+      <div class="week-header wh-p1">
+        <span class="week-num">Week 4</span>
+        <div class="week-check" onclick="toggleWeek(this)" data-id="w4"></div>
+      </div>
+      <div class="week-body">
+        <p class="week-focus">Python wrap-up</p>
+        <ul class="task-list">
+          <li>Finish all Coursera course assignments</li>
+          <li>Do 5 HackerRank exercises</li>
+          <li>Enroll in <em>Applied Data Science</em> specialization</li>
+        </ul>
+        <div class="badge-row">
+          <span class="badge badge-mid">intermediate</span>
+          <span class="badge badge-course">coursera</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- W5 -->
+    <div class="week-card">
+      <div class="week-header wh-p1">
+        <span class="week-num">Week 5</span>
+        <div class="week-check" onclick="toggleWeek(this)" data-id="w5"></div>
+      </div>
+      <div class="week-body">
+        <p class="week-focus">Pandas basics</p>
+        <ul class="task-list">
+          <li>Learn DataFrames and Series</li>
+          <li>Practice loading and exploring a CSV dataset</li>
+          <li>Filter rows and select columns</li>
+        </ul>
+        <div class="badge-row">
+          <span class="badge badge-mid">intermediate</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- W6 -->
+    <div class="week-card">
+      <div class="week-header wh-p1">
+        <span class="week-num">Week 6</span>
+        <div class="week-check" onclick="toggleWeek(this)" data-id="w6"></div>
+      </div>
+      <div class="week-body">
+        <p class="week-focus">NumPy + data cleaning</p>
+        <ul class="task-list">
+          <li>Learn NumPy arrays and operations</li>
+          <li>Handle missing data — dropna, fillna strategies</li>
+          <li>Compare DataFrame vs NumPy — when to use which</li>
+        </ul>
+        <div class="badge-row">
+          <span class="badge badge-mid">intermediate</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- W7 -->
+    <div class="week-card">
+      <div class="week-header wh-p1">
+        <span class="week-num">Week 7</span>
+        <div class="week-check" onclick="toggleWeek(this)" data-id="w7"></div>
+      </div>
+      <div class="week-body">
+        <p class="week-focus">Data visualisation</p>
+        <ul class="task-list">
+          <li>Learn matplotlib — line, bar, scatter, histogram</li>
+          <li>Plot a histogram and scatter chart from real data</li>
+          <li>Learn seaborn heatmaps for correlation</li>
+        </ul>
+        <div class="badge-row">
+          <span class="badge badge-mid">intermediate</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- W8 -->
+    <div class="week-card">
+      <div class="week-header wh-p1">
+        <span class="week-num">Week 8</span>
+        <div class="week-check" onclick="toggleWeek(this)" data-id="w8"></div>
+      </div>
+      <div class="week-body">
+        <p class="week-focus">Intro to Machine Learning</p>
+        <ul class="task-list">
+          <li>Enroll in <em>ML Specialization</em> (Andrew Ng)</li>
+          <li>Learn supervised vs unsupervised learning</li>
+          <li>Understand linear regression basics</li>
+        </ul>
+        <div class="badge-row">
+          <span class="badge badge-mid">intermediate</span>
+          <span class="badge badge-course">coursera</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- W9 -->
+    <div class="week-card">
+      <div class="week-header wh-p1">
+        <span class="week-num">Week 9</span>
+        <div class="week-check" onclick="toggleWeek(this)" data-id="w9"></div>
+      </div>
+      <div class="week-body">
+        <p class="week-focus">Linear regression</p>
+        <ul class="task-list">
+          <li>Understand gradient descent intuitively</li>
+          <li>Build a regression model with scikit-learn</li>
+          <li>Evaluate with MSE, RMSE, and R²</li>
+        </ul>
+        <div class="badge-row">
+          <span class="badge badge-hard">hard</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- W10 -->
+    <div class="week-card">
+      <div class="week-header wh-p1">
+        <span class="week-num">Week 10</span>
+        <div class="week-check" onclick="toggleWeek(this)" data-id="w10"></div>
+      </div>
+      <div class="week-body">
+        <p class="week-focus">Classification</p>
+        <ul class="task-list">
+          <li>Learn logistic regression — concept + sklearn</li>
+          <li>Learn overfitting and regularisation (L1/L2)</li>
+          <li>Build a Titanic survival classifier</li>
+        </ul>
+        <div class="badge-row">
+          <span class="badge badge-hard">hard</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- W11 -->
+    <div class="week-card">
+      <div class="week-header wh-p1">
+        <span class="week-num">Week 11</span>
+        <div class="week-check" onclick="toggleWeek(this)" data-id="w11"></div>
+      </div>
+      <div class="week-body">
+        <p class="week-focus">Neural networks intro</p>
+        <ul class="task-list">
+          <li>Learn neural network basics — neurons, layers, activation</li>
+          <li>Complete ML Specialization assignments</li>
+          <li>Save and celebrate your certificate! 🎉</li>
+        </ul>
+        <div class="badge-row">
+          <span class="badge badge-hard">hard</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- W12 -->
+    <div class="week-card">
+      <div class="week-header wh-p1">
+        <span class="week-num">Week 12</span>
+        <div class="week-check" onclick="toggleWeek(this)" data-id="w12"></div>
+      </div>
+      <div class="week-body">
+        <p class="week-focus">Project 1 — Kaggle Titanic 🚢</p>
+        <ul class="task-list">
+          <li>Complete the Kaggle Titanic challenge end-to-end</li>
+          <li>Write a clear project summary — what did you learn?</li>
+          <li>Upload notebook to GitHub (your first repo!)</li>
+        </ul>
+        <div class="badge-row">
+          <span class="badge badge-hard">hard</span>
+          <span class="badge badge-proj">project</span>
+        </div>
       </div>
     </div>
 
@@ -860,310 +702,553 @@ footer {
 
 <div class="divider"></div>
 
-<!-- WEEK 2 -->
-<section class="section" id="week2">
-  <p class="section-label">Week 2 · Days 7–14</p>
-  <h2 class="section-title">AI/ML foundations</h2>
-  <p class="section-desc">This week is the real test. The difficulty jumps. If you can follow along and complete the exercises without giving up, that's the strongest signal you're ready.</p>
+<!-- ══════════════════════════════════════════════════════ -->
+<!-- PHASE 2 — INTERMEDIATE  Weeks 13–24                   -->
+<!-- ══════════════════════════════════════════════════════ -->
+<section class="section" id="phase2">
+  <p class="section-label">Phase 2 · Weeks 13–24</p>
+  <h2 class="section-title">Intermediate 🔮</h2>
+  <p class="section-desc">Going deeper — pipelines, SQL, ensemble models, NLP, and time series. The skills that will set you apart in the programme.</p>
 
-  <div class="week-block">
-    <div class="days-grid">
+  <div class="weeks-grid">
 
-      <!-- Day 7 -->
-      <div class="day-card">
-        <div class="day-header">
-          <span class="day-num">Day 7 · Sunday</span>
-          <div class="day-check" onclick="toggleDay(this)"></div>
-        </div>
-        <div class="day-body">
-          <p class="day-topic">Data visualisation + EDA</p>
-          <ul class="task-list">
-            <li>matplotlib + seaborn basics</li>
-            <li>Line chart, bar chart, histogram, scatter plot</li>
-            <li>Mean, median, std, correlation — what they mean</li>
-            <li>Identifying outliers visually</li>
-          </ul>
-          <p class="task-highlight">Exercise: EDA on Titanic — produce 4 charts with written observations</p>
-          <div class="badge-row">
-            <span class="badge badge-mid">intermediate</span>
-          </div>
-        </div>
+    <!-- W13 -->
+    <div class="week-card">
+      <div class="week-header wh-p2">
+        <span class="week-num">Week 13</span>
+        <div class="week-check" onclick="toggleWeek(this)" data-id="w13"></div>
       </div>
-
-      <!-- Day 8 -->
-      <div class="day-card">
-        <div class="day-header">
-          <span class="day-num">Day 8 · Monday</span>
-          <div class="day-check" onclick="toggleDay(this)"></div>
+      <div class="week-body">
+        <p class="week-focus">Sklearn pipelines</p>
+        <ul class="task-list">
+          <li>Learn sklearn Pipeline — what it is and why it matters</li>
+          <li>Chain preprocessing + model into one pipeline</li>
+          <li>Learn feature scaling — StandardScaler, MinMaxScaler</li>
+        </ul>
+        <div class="badge-row">
+          <span class="badge badge-mid">intermediate</span>
         </div>
-        <div class="day-body">
-          <p class="day-topic">Math foundations for ML</p>
-          <ul class="task-list">
-            <li>Matrix intuition + dot product (no proofs)</li>
-            <li>y = mx + c — what each part means for ML</li>
-            <li>Probability: P(A), P(A|B), independence</li>
-            <li>Normal distribution — visual intuition</li>
-          </ul>
-          <p class="task-highlight">Exercise: compute covariance between 2 variables manually, then with NumPy</p>
-          <div class="badge-row">
-            <span class="badge badge-mid">intermediate</span>
-            <span class="badge badge-hard">hard</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Day 9 -->
-      <div class="day-card">
-        <div class="day-header">
-          <span class="day-num">Day 9 · Tuesday</span>
-          <div class="day-check" onclick="toggleDay(this)"></div>
-        </div>
-        <div class="day-body">
-          <p class="day-topic">Intro to machine learning</p>
-          <ul class="task-list">
-            <li>Supervised vs unsupervised vs reinforcement</li>
-            <li>Train/test split — why it matters</li>
-            <li>Linear regression with scikit-learn</li>
-            <li>What is overfitting? Intuition only</li>
-          </ul>
-          <p class="task-highlight">Exercise: predict house prices from a small dataset, print RMSE</p>
-          <div class="badge-row">
-            <span class="badge badge-mid">intermediate</span>
-            <span class="badge badge-hard">hard</span>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- Assessment 3 -->
-    <div class="assess-card" id="cp3">
-      <div class="assess-header">
-        <span class="assess-num">CP3</span>
-        <div class="assess-meta">
-          <p class="assess-title">Checkpoint 3 — end of Day 9</p>
-          <p class="assess-timing">~60 min · open notes · must explain reasoning verbally</p>
-        </div>
-      </div>
-      <div class="assess-body">
-        <div class="assess-item"><span class="assess-arrow">→</span>Train a linear regression model on provided data, print R² score — explain what it means in plain English</div>
-        <div class="assess-item"><span class="assess-arrow">→</span>Plot a scatter chart + regression line using matplotlib</div>
-        <div class="assess-item"><span class="assess-arrow">→</span>Given 2 datasets — spot which one is overfitting from train vs test scores alone</div>
-        <div class="assess-item"><span class="assess-arrow">→</span>Explain: what is a training set and why don't we test on it?</div>
       </div>
     </div>
 
-    <div class="days-grid">
-
-      <!-- Day 10 -->
-      <div class="day-card">
-        <div class="day-header">
-          <span class="day-num">Day 10 · Wednesday</span>
-          <div class="day-check" onclick="toggleDay(this)"></div>
-        </div>
-        <div class="day-body">
-          <p class="day-topic">Classification + evaluation</p>
-          <ul class="task-list">
-            <li>Classification vs regression — when to use which</li>
-            <li>Logistic regression — concept + scikit-learn</li>
-            <li>Confusion matrix, precision, recall, F1</li>
-            <li>Decision tree — visual intuition</li>
-          </ul>
-          <p class="task-highlight">Exercise: classify loan approvals — report precision and recall</p>
-          <div class="badge-row">
-            <span class="badge badge-mid">intermediate</span>
-            <span class="badge badge-hard">hard</span>
-          </div>
-        </div>
+    <!-- W14 -->
+    <div class="week-card">
+      <div class="week-header wh-p2">
+        <span class="week-num">Week 14</span>
+        <div class="week-check" onclick="toggleWeek(this)" data-id="w14"></div>
       </div>
-
-      <!-- Day 11 -->
-      <div class="day-card">
-        <div class="day-header">
-          <span class="day-num">Day 11 · Thursday</span>
-          <div class="day-check" onclick="toggleDay(this)"></div>
+      <div class="week-body">
+        <p class="week-focus">Cross-validation &amp; tuning</p>
+        <ul class="task-list">
+          <li>Learn k-fold cross-validation and why it's essential</li>
+          <li>Apply cross_val_score to a real model</li>
+          <li>Learn GridSearchCV for hyperparameter tuning</li>
+        </ul>
+        <div class="badge-row">
+          <span class="badge badge-mid">intermediate</span>
+          <span class="badge badge-hard">hard</span>
         </div>
-        <div class="day-body">
-          <p class="day-topic">Object-oriented programming</p>
-          <ul class="task-list">
-            <li>Classes, objects, <code>__init__</code>, methods</li>
-            <li>Inheritance — one real example</li>
-            <li>Why MTech uses OOP constantly</li>
-            <li>Modules and imports</li>
-          </ul>
-          <p class="task-highlight">Exercise: build a DataCleaner class with <code>clean()</code> and <code>summary()</code> methods</p>
-          <div class="badge-row">
-            <span class="badge badge-hard">hard</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Day 12 -->
-      <div class="day-card">
-        <div class="day-header">
-          <span class="day-num">Day 12 · Friday</span>
-          <div class="day-check" onclick="toggleDay(this)"></div>
-        </div>
-        <div class="day-body">
-          <p class="day-topic">Data cleaning + pipelines</p>
-          <ul class="task-list">
-            <li>Missing values — dropna, fillna strategies</li>
-            <li>Encoding categoricals — LabelEncoder, get_dummies</li>
-            <li>Feature scaling — StandardScaler, MinMaxScaler</li>
-            <li>sklearn Pipeline — what it is and why</li>
-          </ul>
-          <p class="task-highlight">Exercise: full clean + train pipeline on a messy real-world dataset</p>
-          <div class="badge-row">
-            <span class="badge badge-hard">hard</span>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- Assessment 4 -->
-    <div class="assess-card" id="cp4">
-      <div class="assess-header">
-        <span class="assess-num">CP4</span>
-        <div class="assess-meta">
-          <p class="assess-title">Checkpoint 4 — end of Day 12</p>
-          <p class="assess-timing">~75 min · open docs · closest to MTech assignment style</p>
-        </div>
-      </div>
-      <div class="assess-body">
-        <div class="assess-item"><span class="assess-arrow">→</span>Given a messy CSV: clean nulls, encode categoricals, scale numerics, train a classifier — all in one notebook</div>
-        <div class="assess-item"><span class="assess-arrow">→</span>Build a Python class that wraps a model: <code>fit()</code>, <code>predict()</code>, <code>evaluate()</code></div>
-        <div class="assess-item"><span class="assess-arrow">→</span>Print a confusion matrix and explain one real-world cost of false negatives vs false positives</div>
-        <div class="assess-item"><span class="assess-arrow">→</span>Explain: why scale features before training? What goes wrong if you skip it?</div>
       </div>
     </div>
 
-    <div class="days-grid">
-
-      <!-- Day 13 -->
-      <div class="day-card">
-        <div class="day-header">
-          <span class="day-num">Day 13 · Saturday</span>
-          <div class="day-check" onclick="toggleDay(this)"></div>
-        </div>
-        <div class="day-body">
-          <p class="day-topic">Neural network intuition</p>
-          <ul class="task-list">
-            <li>Neurons — weights, bias, activation</li>
-            <li>Forward pass — trace a small network by hand</li>
-            <li>Gradient descent + loss functions (MSE, cross-entropy)</li>
-            <li>Build a 2-layer network with Keras</li>
-          </ul>
-          <p class="task-highlight">Exercise: train MNIST digit classifier, hit >90% accuracy</p>
-          <div class="badge-row">
-            <span class="badge badge-hard">hard</span>
-          </div>
+    <!-- W15 -->
+    <div class="week-card">
+      <div class="week-header wh-p2">
+        <span class="week-num">Week 15</span>
+        <div class="week-check" onclick="toggleWeek(this)" data-id="w15"></div>
+      </div>
+      <div class="week-body">
+        <p class="week-focus">Trees + ensembles</p>
+        <ul class="task-list">
+          <li>Build a decision tree and visualise it</li>
+          <li>Learn random forest — how bagging helps</li>
+          <li>Evaluate with confusion matrix, precision, recall</li>
+        </ul>
+        <div class="badge-row">
+          <span class="badge badge-hard">hard</span>
         </div>
       </div>
+    </div>
 
-      <!-- Day 14 -->
-      <div class="day-card">
-        <div class="day-header">
-          <span class="day-num">Day 14 · Sunday</span>
-          <div class="day-check" onclick="toggleDay(this)"></div>
-        </div>
-        <div class="day-body">
-          <p class="day-topic">Final project</p>
-          <ul class="task-list">
-            <li>Pick one: customer churn, house prices, or spam detection</li>
-            <li>Full pipeline: EDA → clean → model → evaluate</li>
-            <li>Write a 1-page summary — what did the model learn?</li>
-            <li>Reflect: what was hardest? What's still unclear?</li>
-          </ul>
-          <p class="task-highlight">Present your notebook out loud — explain every decision</p>
-          <div class="badge-row">
-            <span class="badge badge-hard">hard</span>
-          </div>
+    <!-- W16 -->
+    <div class="week-card">
+      <div class="week-header wh-p2">
+        <span class="week-num">Week 16</span>
+        <div class="week-check" onclick="toggleWeek(this)" data-id="w16"></div>
+      </div>
+      <div class="week-body">
+        <p class="week-focus">SQL basics</p>
+        <ul class="task-list">
+          <li>Learn SELECT, WHERE, ORDER BY, LIMIT</li>
+          <li>Learn GROUP BY, HAVING, and aggregate functions</li>
+          <li>Practice on SQLZoo or Mode Analytics</li>
+        </ul>
+        <div class="badge-row">
+          <span class="badge badge-mid">intermediate</span>
         </div>
       </div>
+    </div>
 
-      <!-- Wildcard -->
-      <div class="day-card">
-        <div class="day-header">
-          <span class="day-num">Bonus · if ahead of schedule</span>
-          <div class="day-check" onclick="toggleDay(this)"></div>
-        </div>
-        <div class="day-body">
-          <p class="day-topic">LLM + GenAI basics</p>
-          <ul class="task-list">
-            <li>What is a transformer? Attention — intuition only</li>
-            <li>Call OpenAI or Anthropic API with Python</li>
-            <li>What is prompt engineering?</li>
-            <li>Agents — what they are and why MTech covers them</li>
-          </ul>
-          <p class="task-highlight">Exercise: build a simple Python chatbot that calls an API and keeps conversation history</p>
-          <div class="badge-row">
-            <span class="badge badge-hard">hard</span>
-          </div>
+    <!-- W17 -->
+    <div class="week-card">
+      <div class="week-header wh-p2">
+        <span class="week-num">Week 17</span>
+        <div class="week-check" onclick="toggleWeek(this)" data-id="w17"></div>
+      </div>
+      <div class="week-body">
+        <p class="week-focus">Advanced SQL</p>
+        <ul class="task-list">
+          <li>Learn INNER JOIN, LEFT JOIN, RIGHT JOIN</li>
+          <li>Write subqueries and CTEs (WITH clause)</li>
+          <li>Learn window functions — RANK, ROW_NUMBER, LAG</li>
+        </ul>
+        <div class="badge-row">
+          <span class="badge badge-mid">intermediate</span>
+          <span class="badge badge-hard">hard</span>
         </div>
       </div>
+    </div>
 
+    <!-- W18 -->
+    <div class="week-card">
+      <div class="week-header wh-p2">
+        <span class="week-num">Week 18</span>
+        <div class="week-check" onclick="toggleWeek(this)" data-id="w18"></div>
+      </div>
+      <div class="week-body">
+        <p class="week-focus">Feature engineering</p>
+        <ul class="task-list">
+          <li>Create new features from existing columns</li>
+          <li>Encode categoricals — LabelEncoder, get_dummies</li>
+          <li>Polynomial features and interaction terms</li>
+        </ul>
+        <div class="badge-row">
+          <span class="badge badge-hard">hard</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- W19 -->
+    <div class="week-card">
+      <div class="week-header wh-p2">
+        <span class="week-num">Week 19</span>
+        <div class="week-check" onclick="toggleWeek(this)" data-id="w19"></div>
+      </div>
+      <div class="week-body">
+        <p class="week-focus">Gradient boosting (XGBoost)</p>
+        <ul class="task-list">
+          <li>Understand boosting — how it differs from bagging</li>
+          <li>Train an XGBoost model and compare to random forest</li>
+          <li>Tune with GridSearchCV; check feature importances</li>
+        </ul>
+        <div class="badge-row">
+          <span class="badge badge-hard">hard</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- W20 -->
+    <div class="week-card">
+      <div class="week-header wh-p2">
+        <span class="week-num">Week 20</span>
+        <div class="week-check" onclick="toggleWeek(this)" data-id="w20"></div>
+      </div>
+      <div class="week-body">
+        <p class="week-focus">Unsupervised learning</p>
+        <ul class="task-list">
+          <li>Learn K-means clustering — how it works intuitively</li>
+          <li>Apply PCA for dimensionality reduction</li>
+          <li>Visualise clusters with scatter plots</li>
+        </ul>
+        <div class="badge-row">
+          <span class="badge badge-hard">hard</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- W21 -->
+    <div class="week-card">
+      <div class="week-header wh-p2">
+        <span class="week-num">Week 21</span>
+        <div class="week-check" onclick="toggleWeek(this)" data-id="w21"></div>
+      </div>
+      <div class="week-body">
+        <p class="week-focus">NLP basics</p>
+        <ul class="task-list">
+          <li>Learn text cleaning — lowercase, stopwords, punctuation</li>
+          <li>Learn tokenisation and TF-IDF vectorisation</li>
+          <li>Build a simple sentiment classifier</li>
+        </ul>
+        <div class="badge-row">
+          <span class="badge badge-hard">hard</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- W22 -->
+    <div class="week-card">
+      <div class="week-header wh-p2">
+        <span class="week-num">Week 22</span>
+        <div class="week-check" onclick="toggleWeek(this)" data-id="w22"></div>
+      </div>
+      <div class="week-body">
+        <p class="week-focus">Time series</p>
+        <ul class="task-list">
+          <li>Work with datetime in pandas — parse, resample, shift</li>
+          <li>Compute rolling averages and seasonal decomposition</li>
+          <li>Forecast with a simple ARIMA or linear trend model</li>
+        </ul>
+        <div class="badge-row">
+          <span class="badge badge-hard">hard</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- W23 -->
+    <div class="week-card">
+      <div class="week-header wh-p2">
+        <span class="week-num">Week 23</span>
+        <div class="week-check" onclick="toggleWeek(this)" data-id="w23"></div>
+      </div>
+      <div class="week-body">
+        <p class="week-focus">Deep learning with Keras</p>
+        <ul class="task-list">
+          <li>Build a multi-layer neural network in Keras</li>
+          <li>Understand epochs, batch size, and learning rate</li>
+          <li>Train on MNIST and hit &gt;97% accuracy</li>
+        </ul>
+        <div class="badge-row">
+          <span class="badge badge-hard">hard</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- W24 -->
+    <div class="week-card">
+      <div class="week-header wh-p2">
+        <span class="week-num">Week 24</span>
+        <div class="week-check" onclick="toggleWeek(this)" data-id="w24"></div>
+      </div>
+      <div class="week-body">
+        <p class="week-focus">Project 2 — Customer churn 📊</p>
+        <ul class="task-list">
+          <li>Full pipeline: EDA → clean → feature engineer → model</li>
+          <li>Compare logistic regression, random forest, XGBoost</li>
+          <li>Write a summary notebook and upload to GitHub</li>
+        </ul>
+        <div class="badge-row">
+          <span class="badge badge-hard">hard</span>
+          <span class="badge badge-proj">project</span>
+        </div>
+      </div>
     </div>
 
   </div>
-
-  <!-- Final assessment -->
-  <div class="final-card" id="assessments">
-    <div class="final-header">
-      <span class="final-star">★</span>
-      <div>
-        <p class="final-title">Final assessment — Day 14 · ~90 min · full project review</p>
-        <p class="final-sub">This is the real verdict. No shortcuts.</p>
-      </div>
-    </div>
-    <div class="final-body">
-      <div class="final-item"><div class="final-tick">1</div>Present the end-to-end notebook — be ready to answer "why did you choose this model?"</div>
-      <div class="final-item"><div class="final-tick">2</div>Spot-check: 3 random questions from any week — answer without looking anything up</div>
-      <div class="final-item"><div class="final-tick">3</div>Live debug: a bug gets introduced into your code — find and fix it in under 10 minutes</div>
-      <div class="final-item"><div class="final-tick">4</div>Gut check: "Would you be okay seeing this every day for 12 months?" — your honest answer matters most</div>
-    </div>
-  </div>
-
 </section>
 
-<div class="divider" style="margin-top:48px"></div>
+<div class="divider"></div>
 
-<!-- TOOLS -->
-<section class="section" id="tools">
+<!-- ══════════════════════════════════════════════════════ -->
+<!-- PHASE 3 — APPLICATION  Weeks 25–36                    -->
+<!-- ══════════════════════════════════════════════════════ -->
+<section class="section" id="phase3">
+  <p class="section-label">Phase 3 · Weeks 25–36</p>
+  <h2 class="section-title">Application 🚀</h2>
+  <p class="section-desc">Advanced models, deployment, ethics, and the capstone project. This is where everything comes together for your MTech application.</p>
+
+  <div class="weeks-grid">
+
+    <!-- W25 -->
+    <div class="week-card">
+      <div class="week-header wh-p3">
+        <span class="week-num">Week 25</span>
+        <div class="week-check" onclick="toggleWeek(this)" data-id="w25"></div>
+      </div>
+      <div class="week-body">
+        <p class="week-focus">Convolutional networks (CNN)</p>
+        <ul class="task-list">
+          <li>Understand CNN architecture — filters, pooling, feature maps</li>
+          <li>Build a CNN in Keras for image classification</li>
+          <li>Train on CIFAR-10 and analyse results</li>
+        </ul>
+        <div class="badge-row">
+          <span class="badge badge-hard">hard</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- W26 -->
+    <div class="week-card">
+      <div class="week-header wh-p3">
+        <span class="week-num">Week 26</span>
+        <div class="week-check" onclick="toggleWeek(this)" data-id="w26"></div>
+      </div>
+      <div class="week-body">
+        <p class="week-focus">Transformers &amp; modern NLP</p>
+        <ul class="task-list">
+          <li>Understand attention and transformers intuitively</li>
+          <li>Use HuggingFace to run a pre-trained BERT model</li>
+          <li>Fine-tune on a text classification task</li>
+        </ul>
+        <div class="badge-row">
+          <span class="badge badge-hard">hard</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- W27 -->
+    <div class="week-card">
+      <div class="week-header wh-p3">
+        <span class="week-num">Week 27</span>
+        <div class="week-check" onclick="toggleWeek(this)" data-id="w27"></div>
+      </div>
+      <div class="week-body">
+        <p class="week-focus">Model deployment basics</p>
+        <ul class="task-list">
+          <li>Save and load a trained model (pickle / joblib)</li>
+          <li>Build a simple prediction API with FastAPI</li>
+          <li>Deploy to a free cloud service (Render or Hugging Face Spaces)</li>
+        </ul>
+        <div class="badge-row">
+          <span class="badge badge-hard">hard</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- W28 -->
+    <div class="week-card">
+      <div class="week-header wh-p3">
+        <span class="week-num">Week 28</span>
+        <div class="week-check" onclick="toggleWeek(this)" data-id="w28"></div>
+      </div>
+      <div class="week-body">
+        <p class="week-focus">Cloud &amp; MLOps basics</p>
+        <ul class="task-list">
+          <li>Intro to Google Cloud / AWS — what they offer for ML</li>
+          <li>Learn experiment tracking with MLflow or Weights &amp; Biases</li>
+          <li>Understand model versioning and reproducibility</li>
+        </ul>
+        <div class="badge-row">
+          <span class="badge badge-hard">hard</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- W29 -->
+    <div class="week-card">
+      <div class="week-header wh-p3">
+        <span class="week-num">Week 29</span>
+        <div class="week-check" onclick="toggleWeek(this)" data-id="w29"></div>
+      </div>
+      <div class="week-body">
+        <p class="week-focus">Ethics &amp; responsible AI</p>
+        <ul class="task-list">
+          <li>Understand bias and fairness in ML models</li>
+          <li>Learn explainability with SHAP values</li>
+          <li>Read one ethics in AI paper and summarise it</li>
+        </ul>
+        <div class="badge-row">
+          <span class="badge badge-mid">intermediate</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- W30 -->
+    <div class="week-card">
+      <div class="week-header wh-p3">
+        <span class="week-num">Week 30</span>
+        <div class="week-check" onclick="toggleWeek(this)" data-id="w30"></div>
+      </div>
+      <div class="week-body">
+        <p class="week-focus">Research paper reading</p>
+        <ul class="task-list">
+          <li>Read "Attention Is All You Need" (Transformers paper)</li>
+          <li>Read one recent AI application paper in your area of interest</li>
+          <li>Write a 1-page plain-English summary of each</li>
+        </ul>
+        <div class="badge-row">
+          <span class="badge badge-hard">hard</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- W31 -->
+    <div class="week-card">
+      <div class="week-header wh-p3">
+        <span class="week-num">Week 31</span>
+        <div class="week-check" onclick="toggleWeek(this)" data-id="w31"></div>
+      </div>
+      <div class="week-body">
+        <p class="week-focus">Capstone planning 🗺️</p>
+        <ul class="task-list">
+          <li>Choose a meaningful real-world problem to solve</li>
+          <li>Find and explore a suitable dataset</li>
+          <li>Define success metrics and write a 1-page project plan</li>
+        </ul>
+        <div class="badge-row">
+          <span class="badge badge-hard">hard</span>
+          <span class="badge badge-proj">project</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- W32 -->
+    <div class="week-card">
+      <div class="week-header wh-p3">
+        <span class="week-num">Week 32</span>
+        <div class="week-check" onclick="toggleWeek(this)" data-id="w32"></div>
+      </div>
+      <div class="week-body">
+        <p class="week-focus">Capstone — EDA &amp; cleaning</p>
+        <ul class="task-list">
+          <li>Full exploratory data analysis with visualisations</li>
+          <li>Clean and preprocess the dataset thoroughly</li>
+          <li>Document every decision with written observations</li>
+        </ul>
+        <div class="badge-row">
+          <span class="badge badge-hard">hard</span>
+          <span class="badge badge-proj">project</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- W33 -->
+    <div class="week-card">
+      <div class="week-header wh-p3">
+        <span class="week-num">Week 33</span>
+        <div class="week-check" onclick="toggleWeek(this)" data-id="w33"></div>
+      </div>
+      <div class="week-body">
+        <p class="week-focus">Capstone — modelling</p>
+        <ul class="task-list">
+          <li>Build at least 3 different models and compare them</li>
+          <li>Tune the best model with cross-validation</li>
+          <li>Interpret results and document findings</li>
+        </ul>
+        <div class="badge-row">
+          <span class="badge badge-hard">hard</span>
+          <span class="badge badge-proj">project</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- W34 -->
+    <div class="week-card">
+      <div class="week-header wh-p3">
+        <span class="week-num">Week 34</span>
+        <div class="week-check" onclick="toggleWeek(this)" data-id="w34"></div>
+      </div>
+      <div class="week-body">
+        <p class="week-focus">Capstone — polish &amp; deploy</p>
+        <ul class="task-list">
+          <li>Refine the notebook — clean code, clear markdown</li>
+          <li>Deploy model as a simple web demo</li>
+          <li>Record a short video walkthrough of the project</li>
+        </ul>
+        <div class="badge-row">
+          <span class="badge badge-hard">hard</span>
+          <span class="badge badge-proj">project</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- W35 -->
+    <div class="week-card">
+      <div class="week-header wh-p3">
+        <span class="week-num">Week 35</span>
+        <div class="week-check" onclick="toggleWeek(this)" data-id="w35"></div>
+      </div>
+      <div class="week-body">
+        <p class="week-focus">Portfolio &amp; GitHub polish</p>
+        <ul class="task-list">
+          <li>Clean up all 3 project repos with proper READMEs</li>
+          <li>Create a pinned GitHub portfolio with project previews</li>
+          <li>Update LinkedIn with skills, projects, and certificates</li>
+        </ul>
+        <div class="badge-row">
+          <span class="badge badge-mid">intermediate</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- W36 -->
+    <div class="week-card">
+      <div class="week-header wh-p3">
+        <span class="week-num">Week 36</span>
+        <div class="week-check" onclick="toggleWeek(this)" data-id="w36"></div>
+      </div>
+      <div class="week-body">
+        <p class="week-focus">MTech application prep ✨</p>
+        <ul class="task-list">
+          <li>Write and refine your Statement of Purpose</li>
+          <li>Prepare answers to common interview questions</li>
+          <li>Final review — you made it! Send the application 🌸</li>
+        </ul>
+        <div class="badge-row">
+          <span class="badge badge-mid">intermediate</span>
+          <span class="badge badge-proj">milestone</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ══════════════════════════════════════════════════════ -->
+<!-- RESOURCES                                              -->
+<!-- ══════════════════════════════════════════════════════ -->
+<section class="section" id="resources">
   <p class="section-label">Resources</p>
-  <h2 class="section-title">Recommended tools & courses</h2>
-  <p class="section-desc">Everything here is free. You don't need to pay for anything to complete this plan.</p>
+  <h2 class="section-title">Courses &amp; tools</h2>
+  <p class="section-desc">Everything you need is free. No paid subscriptions required to finish this plan.</p>
 
   <div class="tools-grid">
     <div class="tool-card">
-      <p class="tool-label">Editor</p>
+      <p class="tool-label">Editor · All phases</p>
       <p class="tool-name">Google Colab</p>
-      <p class="tool-desc">Free Python notebook in the browser. No installation, shareable links, runs on Google's servers. Best for beginners.</p>
+      <p class="tool-desc">Free Python notebook in your browser — no installation, runs on Google's servers. The easiest way to get started.</p>
     </div>
     <div class="tool-card">
-      <p class="tool-label">Python course</p>
-      <p class="tool-name">CS50P — Harvard</p>
-      <p class="tool-desc">Best free Python course available. Problem sets are challenging, graded automatically. Watch 1–2 lectures per day alongside this plan.</p>
+      <p class="tool-label">Python · Weeks 1–4</p>
+      <p class="tool-name">Python for Everybody</p>
+      <p class="tool-desc">The best beginner Python course on Coursera. Friendly, clear, and completely beginner-safe. Start here on Week 1.</p>
     </div>
     <div class="tool-card">
-      <p class="tool-label">ML course</p>
-      <p class="tool-name">Kaggle Learn</p>
-      <p class="tool-desc">Free bite-sized ML courses with interactive notebooks. Python, pandas, ML intro, and deep learning — all free with certificates.</p>
+      <p class="tool-label">Data Science · Week 4+</p>
+      <p class="tool-name">Applied DS Specialization</p>
+      <p class="tool-desc">Covers pandas, visualisation, and applied ML. Enroll in Week 4 once you've got the Python basics down.</p>
     </div>
     <div class="tool-card">
-      <p class="tool-label">Datasets</p>
-      <p class="tool-name">Kaggle Datasets</p>
-      <p class="tool-desc">Thousands of real-world datasets. Start with Titanic (classification) and House Prices (regression) — both are beginner-friendly.</p>
+      <p class="tool-label">ML · Week 8+</p>
+      <p class="tool-name">ML Specialization (Andrew Ng)</p>
+      <p class="tool-desc">The gold standard ML course. Andrew Ng explains everything with intuition first — no scary maths required.</p>
     </div>
     <div class="tool-card">
-      <p class="tool-label">Reference</p>
+      <p class="tool-label">Practice · All phases</p>
+      <p class="tool-name">Kaggle Learn + Datasets</p>
+      <p class="tool-desc">Free bite-sized ML courses with interactive notebooks. Use Titanic and House Prices as your first projects.</p>
+    </div>
+    <div class="tool-card">
+      <p class="tool-label">SQL · Weeks 16–17</p>
+      <p class="tool-name">SQLZoo / Mode Analytics</p>
+      <p class="tool-desc">Free interactive SQL practice with real queries. SQLZoo is great for beginners; Mode has more advanced challenges.</p>
+    </div>
+    <div class="tool-card">
+      <p class="tool-label">NLP · Week 26</p>
+      <p class="tool-name">HuggingFace</p>
+      <p class="tool-desc">The go-to library for transformers and modern NLP. Free models, datasets, and Spaces for deploying demos.</p>
+    </div>
+    <div class="tool-card">
+      <p class="tool-label">Reference · All phases</p>
       <p class="tool-name">scikit-learn docs</p>
-      <p class="tool-desc">Official documentation with excellent examples. When stuck on a model or preprocessing step, this is the first place to check.</p>
+      <p class="tool-desc">Official documentation with excellent examples. When stuck on a model or preprocessing step, check here first.</p>
     </div>
     <div class="tool-card">
       <p class="tool-label">Community</p>
       <p class="tool-name">Stack Overflow</p>
-      <p class="tool-desc">99% of beginner Python errors have already been asked and answered here. Search the exact error message first before anything else.</p>
+      <p class="tool-desc">99% of beginner Python errors have already been answered here. Search the exact error message first.</p>
     </div>
   </div>
 </section>
@@ -1173,55 +1258,60 @@ footer {
 
 <!-- PROGRESS BAR -->
 <div class="progress-bar-wrap">
-  <span class="progress-label">Progress</span>
+  <span class="progress-label">🌸 Progress</span>
   <div class="progress-bar">
     <div class="progress-fill" id="progressFill"></div>
   </div>
-  <span class="progress-count" id="progressCount">0 / 14</span>
+  <span class="progress-count" id="progressCount">0 / 36</span>
 </div>
 
 <!-- FOOTER -->
 <footer>
-  <div class="footer-left">SY's MTech Prep <span>· Python × AI/ML · 2 weeks</span></div>
-  <div class="footer-right">Tick each day when done · good luck!</div>
+  <div class="footer-left">SY's MTech Prep 🌸 <span>· 36 weeks · 3 phases · 1 dream</span></div>
+  <div class="footer-right">Progress saves in your browser automatically ✓</div>
 </footer>
 
 <script>
-const TOTAL = 14;
-let done = JSON.parse(localStorage.getItem('sy_days') || '[]');
+const TOTAL = 36;
+let done = new Set(JSON.parse(localStorage.getItem('sy_mtech_36w') || '[]'));
 
-function updateProgress() {
-  const pct = Math.round((done.length / TOTAL) * 100);
-  document.getElementById('progressFill').style.width = pct + '%';
-  document.getElementById('progressCount').textContent = done.length + ' / ' + TOTAL;
+function save() {
+  localStorage.setItem('sy_mtech_36w', JSON.stringify([...done]));
 }
 
-function toggleDay(el) {
-  const card = el.closest('.day-card');
-  const idx = Array.from(document.querySelectorAll('.day-card')).indexOf(card);
+function updateProgress() {
+  const n = done.size;
+  const pct = Math.round((n / TOTAL) * 100);
+  document.getElementById('progressFill').style.width = pct + '%';
+  document.getElementById('progressCount').textContent = n + ' / ' + TOTAL;
+}
+
+function toggleWeek(el) {
+  const id = el.dataset.id;
+  const card = el.closest('.week-card');
   if (el.classList.contains('done')) {
     el.classList.remove('done');
-    done = done.filter(d => d !== idx);
-    card.style.opacity = '1';
+    done.delete(id);
+    card.classList.remove('done-card');
   } else {
     el.classList.add('done');
-    done.push(idx);
-    card.style.opacity = '0.6';
+    done.add(id);
+    card.classList.add('done-card');
   }
-  localStorage.setItem('sy_days', JSON.stringify(done));
+  save();
   updateProgress();
 }
 
-// Restore state
-document.querySelectorAll('.day-card').forEach((card, idx) => {
-  if (done.includes(idx)) {
-    card.querySelector('.day-check').classList.add('done');
-    card.style.opacity = '0.6';
+// Restore saved state on load
+document.querySelectorAll('.week-check').forEach(el => {
+  if (done.has(el.dataset.id)) {
+    el.classList.add('done');
+    el.closest('.week-card').classList.add('done-card');
   }
 });
 updateProgress();
 
-// Nav active state on scroll
+// Sticky nav active state on scroll
 const sections = document.querySelectorAll('section[id]');
 const navLinks = document.querySelectorAll('.nav-link');
 const observer = new IntersectionObserver(entries => {
@@ -1232,7 +1322,7 @@ const observer = new IntersectionObserver(entries => {
       if (link) link.classList.add('active');
     }
   });
-}, { threshold: 0.3 });
+}, { threshold: 0.2 });
 sections.forEach(s => observer.observe(s));
 </script>
 </body>
